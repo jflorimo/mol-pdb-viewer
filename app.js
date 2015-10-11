@@ -19,6 +19,7 @@ var createAtom = function(size, x, y , z){
 
 var createScene = function() {
 	initSceneCameraAndLight();
+	console.log(atoms);
 	// var sphere = BABYLON.Mesh.CreateSphere("sphere1", 16, 2, scene);
 	// sphere.position.y = 1;
 	// var ground = BABYLON.Mesh.CreateGround("ground1", 6, 6, 2, scene);
@@ -26,6 +27,10 @@ var createScene = function() {
 };
 
 createScene();
+
+var loadScene = function(){
+	console.log(atoms);
+};
 
 engine.runRenderLoop(function () {
     scene.render();
